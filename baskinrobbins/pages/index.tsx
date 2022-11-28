@@ -1,7 +1,12 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import { NextPage } from "next";
+import Icecream from "../components/Icecream/Icecream";
 
-export default function Home() {
-  return <></>;
-}
+const Home: NextPage = () => {
+  return (
+    <>
+      <Icecream />
+    </>
+  );
+};
+
+export default Home;
