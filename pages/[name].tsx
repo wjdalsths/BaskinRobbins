@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import IcecreamDetail from "../components/IcecreamDetail/IcecreamDetail";
 import { IcecreamList } from "../data/IcecreamList";
 import { IcecreamNutritionalList } from "../data/IcecreamNutritionalList";
+
 const IcecreamDetailPage: NextPage = () => {
   const router = useRouter();
   const Iname = router.query.name;
@@ -10,11 +11,7 @@ const IcecreamDetailPage: NextPage = () => {
   const NullLiteralData: any = IcecreamNutritionalList.find(
     (item) => item.name === Iname
   );
-  return (
-    <>
-      <IcecreamDetail data={DetailData} Ndata={NullLiteralData} />
-    </>
-  );
+  return <IcecreamDetail data={DetailData} Ndata={NullLiteralData} />;
 };
 
 export default IcecreamDetailPage;

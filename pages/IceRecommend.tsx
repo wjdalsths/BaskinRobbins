@@ -2,10 +2,6 @@ import { NextPage } from "next";
 import IceRecommed from "../components/IceRecommed/IceRecommend";
 
 const IceRecommendPage: NextPage = () => {
-  return (
-    <>
-      <IceRecommed />
-    </>
-  );
+  return <IceRecommed />;
 };
 export default IceRecommendPage;

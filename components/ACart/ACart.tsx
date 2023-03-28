@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import * as S from "./style";
 import Image from "next/image";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilState } from "recoil";
 import { CartList } from "../../types/CartList";
 import { CartAList, CartNum } from "../../Util/state";
 import Link from "next/link";
@@ -66,21 +66,6 @@ const ACart: NextPage = () => {
               </S.IList>
             ))
           )}
-          {/* <S.IList>
-            <S.Name>asdf</S.Name>
-            <S.Thumbnail></S.Thumbnail>
-            <S.DelBtn>삭제하기</S.DelBtn>
-          </S.IList>
-          <S.IList>
-            <S.Name>asdf</S.Name>
-            <S.Thumbnail></S.Thumbnail>
-            <S.DelBtn>삭제하기</S.DelBtn>
-          </S.IList>
-          <S.IList>
-            <S.Name>asdf</S.Name>
-            <S.Thumbnail></S.Thumbnail>
-            <S.DelBtn>삭제하기</S.DelBtn>
-          </S.IList> */}
         </S.IcecreamList>
       </S.Container>
       <S.OrderBtn>
